@@ -8,4 +8,5 @@ Article about the formula (you can also google it): https://towardsdatascience.c
 Thank you for using this program!
 
 !!! Important: To use this program you must install scipy as we are importing from scipy!!!
+
 Scipy: https://docs.scipy.org/doc/scipy/reference/integrate.html
