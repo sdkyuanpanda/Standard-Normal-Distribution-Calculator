@@ -48,7 +48,7 @@ def main():
         mode = input("Enter help, z-score, percentile, or quit:")
         realmode = str(mode)
 
-        if realmode == "z-score":
+        if (realmode == "z-score" or realmode == "Z-score"):
             print("finding z-score...")
             print("Enter the  Value, then the mean, then the standard deviation")
             value = input("Enter Value:")
@@ -64,7 +64,7 @@ def main():
             except:
                 print("Invalid Input, please try again")
 
-        elif realmode == "percentile":
+        elif (realmode == "percentile" or realmode == "Percentile"):
             print("finding percentile...")
             print("Enter the Value, then the mean, then the standard deviation")
             valueforSnd = input("Enter Value:")
@@ -81,21 +81,13 @@ def main():
                 print("Would you like some additional info about your data set?")
                 addInfo = input("Yes for more and no to cancel:")
 
-                if addInfo == "Yes":
+                if (addInfo == "Yes" or addInfo == "yes"):
                     print("The value you put was:", realValuesnd)
                     print("The mean of your data set was:", realMeansnd)
                     print("The Standard Deviation of your data set was:", realStdsnd)
                     print("The z-score of your data set was:", sndplug)
                     print("The percentile of your data set is:", userPercentile)
-                elif addInfo == "yes":
-                    print("The value you put was:", realValuesnd)
-                    print("The mean of your data set was:", realMeansnd)
-                    print("The Standard Deviation of your data set was:", realStdsnd)
-                    print("The z-score of your data set was:", sndplug)
-                    print("The percentile of your data set is:", userPercentile)
-                elif addInfo == "No":
-                    print("No additional information given")
-                elif addInfo == "no":
+                elif (addInfo == "No" or addInfo == "no"):
                     print("No additional information given")
                 else:
                     print("Invalid Input, no additional information given")
@@ -103,9 +95,9 @@ def main():
             except ValueError:
                 print("Invalid Input, please try again")
 
-        elif realmode == "help":
+        elif (realmode == "help" or realmode == "Help"):
             print_Help()
-        elif realmode == "quit":
+        elif (realmode == "quit" or realmode == "Quit"):
             print("Thank you for using this program!")
             break
         else:
